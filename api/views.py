@@ -8,6 +8,9 @@ import secrets
 
 def oauth(request):
     params = request.GET
+    state = params.get('state', None)
+    code = params.get('code', None)
+    error = params.get('error', None)
     return JsonResponse({"online": True, "received_params": params})
 
 
