@@ -1,0 +1,30 @@
+name: oauth2_server
+channels:
+  - defaults
+dependencies:
+  - asgiref=3.4.1=pyhd3eb1b0_0
+  - ca-certificates=2021.7.5=hecd8cb5_1
+  - certifi=2021.5.30=py39hecd8cb5_0
+  - django=3.2.5=pyhd3eb1b0_0
+  - krb5=1.19.2=hcd88c3b_0
+  - libcxx=12.0.0=h2f01273_0
+  - libedit=3.1.20210714=h9ed2024_0
+  - libffi=3.3=hb1e8313_2
+  - libpq=12.2=h1b4eb34_1
+  - ncurses=6.2=h0a44026_1
+  - openssl=1.1.1l=h9ed2024_0
+  - pip=21.2.4=py37hecd8cb5_0
+  - psycopg2=2.8.6=py39hbcfaee0_1
+  - python=3.9.6=h88f2d9e_1
+  - pytz=2021.1=pyhd3eb1b0_0
+  - readline=8.1=h9ed2024_0
+  - setuptools=52.0.0=py39hecd8cb5_0
+  - sqlite=3.36.0=hce871da_0
+  - sqlparse=0.4.1=py_0
+  - tk=8.6.10=hb0a8c7a_0
+  - typing_extensions=3.10.0.0=pyhca03da5_0
+  - tzdata=2021a=h5d7bf9c_0
+  - wheel=0.37.0=pyhd3eb1b0_1
+  - xz=5.2.5=h1de35cc_0
+  - zlib=1.2.11=h1de35cc_3
+prefix: /usr/local/anaconda3/envs/oauth2_server
