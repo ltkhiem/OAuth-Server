@@ -7,7 +7,8 @@ import secrets
 
 
 def oauth(request):
-    return HttpResponse("Online")
+    params = request.GET
+    return JsonResponse({"online": True, "received_params": params})
 
 
 def gen_auth_url(request):
