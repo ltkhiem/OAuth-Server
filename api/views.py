@@ -1,8 +1,14 @@
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+import json
+
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
 from services import providers
 from urllib.parse import urlencode
 from config import deploy
+from utils import data_logger
+import time
+
 import secrets
 
 
@@ -42,4 +48,12 @@ def get_auth_tokens():
     pass
 
 
-
+# For test purpose only
+@csrf_exempt
+def update_reading(request):
+    if request.method != 'POST':
+        return JsonResponse({"success": False, "message": "Method not allowed"})
+    else:
+        data = json.loads(request.body)
+        data_logger.log([time.time(), json.dumps(data)])
+        return JsonResponse({"success": True})
